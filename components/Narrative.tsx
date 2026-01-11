@@ -17,7 +17,7 @@ const Narrative: React.FC = () => {
             <div className="w-full aspect-video bg-gray-800 rounded-lg mb-8 overflow-hidden border border-gray-700 relative">
                {/* Replace src with your actual image path */}
                <img 
-                 src="/images/02.jpg" 
+                 src="./images/02.jpg" 
                  alt="Narrative A Visual" 
                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                />
@@ -54,7 +54,7 @@ const Narrative: React.FC = () => {
              <div className="w-full aspect-video bg-gray-800 rounded-lg mb-8 overflow-hidden border border-binance-yellow/30 relative">
                 {/* Replace src with your actual image path */}
                 <img 
-                  src="/images/03.jpg" 
+                  src="./images/03.jpg" 
                   alt="Narrative B Visual" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
