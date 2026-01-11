@@ -3,7 +3,7 @@ import SplitBackground from './components/SplitBackground';
 import Hero from './components/Hero';
 import Narrative from './components/Narrative';
 import Vision from './components/Vision';
-import Contract from './components/Contract';
+import Tokenomics from './components/Tokenomics';
 import Community from './components/Community';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Hero />
         <Narrative />
         <Vision />
-        <Contract />
+        <Tokenomics />
         <Community />
       </main>
     </div>
