@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           何一顶级双叙事：双重降临
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16 my-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 my-8">
           <motion.h1 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -39,11 +39,15 @@ const Hero: React.FC = () => {
           </motion.h1>
 
           <motion.div 
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.6, type: 'spring' }}
-            className="w-2 h-24 md:w-40 md:h-2 bg-binance-yellow rounded-full md:rotate-90 shadow-[0_0_20px_rgba(240,185,11,0.6)]"
-          />
+            initial={{ scale: 0, rotate: -180 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ delay: 0.6, type: 'spring', duration: 1.5, bounce: 0.5 }}
+            className="relative z-10 p-2"
+          >
+             <svg width="100" height="100" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 md:w-32 md:h-32 drop-shadow-[0_0_30px_rgba(240,185,11,0.6)]">
+                <path d="M16 0L21.3333 5.33333L16 10.6667L10.6667 5.33333L16 0ZM5.33333 10.6667L10.6667 16L5.33333 21.3333L0 16L5.33333 10.6667ZM26.6667 10.6667L32 16L26.6667 21.3333L21.3333 16L26.6667 10.6667ZM16 21.3333L21.3333 26.6667L16 32L10.6667 26.6667L16 21.3333ZM16 13.3333L18.6667 16L16 18.6667L13.3333 16L16 13.3333Z" fill="#F0B90B"/>
+             </svg>
+          </motion.div>
 
           <motion.h1 
             initial={{ opacity: 0, x: 50 }}
